@@ -3,8 +3,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class BankAccount {
-    public static Scanner inputUserData = new Scanner(System.in);
-
+    public Scanner inputUserData = new Scanner(System.in);
+    
     String fName;
     String lName;
     String Email;
@@ -24,9 +24,19 @@ public class BankAccount {
         this.balanceAccounts = balanceAccounts;
     }
 
-    public void accountBalance(double amount){
-        this.balanceAccounts = amount;
-        
+    
+
+    public void setUserFirstName(){
+        System.out.println("Podaj swoje Imie:");
+        String firstNameInput = inputUserData.nextLine();
+        this.fName = firstNameInput;
+    }
+
+    
+    public void setUserLastName(){
+        System.out.println("Prosze podaj Nazwisko:");
+        String lastNameInput = inputUserData.nextLine();
+        this.fName = lastNameInput;
     }
 
     

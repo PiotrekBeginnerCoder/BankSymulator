@@ -1,8 +1,14 @@
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        tests tests = new tests();
-        tests.hffyr("HEllo world");
+        BankAccount bankaccount = new BankAccount(null);
+        bankaccount.setUserName();
+        System.out.println(bankaccount.getUserName());
+    
+        
+        
+        
         
  
         
